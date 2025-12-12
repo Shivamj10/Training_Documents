@@ -670,5 +670,60 @@ Deploy the latest version of ARtifacts from S3 Bucket to Target Environment
 	- To Store Database ==> (SQL/No-SQL) 
 
 				
+
+
+######################
+Day 7: 11th Dec. 2025
+######################	
+
+	- AWS Network Services :::: *********
+	
+		Deploy: 3 - Tier Web Application :
+			
+				Front-End Layer 	-> User Interface 
+				
+				Application Layer 	-> Business Logics 
+				
+				Backend Layer		-> Database 
+	
+######################
+Day 8: 12th Dec. 2025
+######################	
+
+	Working with AWS VPC and Public & Private Subnets :::
+	
+	VPC ::: PL_AWS_VPC_A
+	
+	IGW ::: PL_AWS_VPC_A-IGW
+	
+	Public_Subnet ::: PL_AWS_VPC_A-Public
+	
+	
+
+	
+	Route_Table_Public_Subnet ::: RT_PL_AWS_VPC_A-Public
+	
+
+	
+	EC2_Instance : PL_AWS_WAS
+	
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello! You accessing web server - $(hostname -f)</h1>" > /var/www/html/index.html	
+
+
+	Private Subnet :::
+
+	#Private_Subnet ::: PL_AWS_VPC_A-Private
+	
+	#Route_Table_Private_Subnet ::: RT_PL_AWS_VPC_A-Private	
+	
+Next :::
+
+	AWS VPC Connectivity Options :::::
+	
 				
 			
