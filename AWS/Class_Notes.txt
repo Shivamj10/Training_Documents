@@ -1132,7 +1132,7 @@ IAM	::
 		   Security Groups
 		   
 			1 VPC 		
-				PLAWS2612-VPC			vpc-06a9e026753e5b218 / PLAWS2612-VPC
+				PLAWS2612-VPC			vpc-0fa683daf20dcc74b / PLAWS2612-VPC
 				
 				Internet-Gateway		PLAWS2612-IGW
 				
