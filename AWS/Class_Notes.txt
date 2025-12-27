@@ -1136,7 +1136,7 @@ IAM	::
 				
 				Internet-Gateway		PLAWS2612-IGW
 				
-				Main_Route Table : rtb-04f4665feb7ce7415
+				Main_Route Table : rtb-04321a1c29bc36c39
 				
 				2 Public_Subnets 		
 						- PLAWS2612-VPC-Public-SN1
