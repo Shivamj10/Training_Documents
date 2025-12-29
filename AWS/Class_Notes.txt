@@ -1596,7 +1596,29 @@ SG	rds-sg
 •	Endpoint
 •	Username
 •	Password
-________________________________________
+
+
+###Create an EC2 Instance using public subnet and Login to MySQL from EC2
+
+mysql -h <RDS-ENDPOINT> -u admin -p
+
+Create database and table
+CREATE DATABASE project1db;
+USE project1db;
+
+CREATE TABLE appusers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    filename VARCHAR(100)
+);
+
+SELECT * from appusers;
+
+Exit MySQL:
+exit
+
+_______________________________________
 🟢 STEP 7: CREATE SQS
 Name: crud-events-queue
 Type: Standard
