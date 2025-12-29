@@ -1197,13 +1197,13 @@ Scripting Languages:
 Create Custom AMIs, Launch Templates based on the business requirement (Application Level)
 			
 
-RDS Endpoint: project1-database.c5gsg4a82ts5.ap-south-1.rds.amazonaws.com
+RDS Endpoint: pl-rdsdbendpoint.c36umkqcwd2g.ap-southeast-2.rds.amazonaws.com
 
 Login to EC2 Instance and access RDS :::
 
-project1-database.c5gsg4a82ts5.ap-south-1.rds.amazonaws.com
+pl-rdsdbendpoint.c36umkqcwd2g.ap-southeast-2.rds.amazonaws.com
 
-mysql -h project1-database.c5gsg4a82ts5.ap-south-1.rds.amazonaws.com -u admin -p
+mysql -h pl-rdsdbendpoint.c36umkqcwd2g.ap-southeast-2.rds.amazonaws.com -u admin -p
 
 
 AWS Instance Launch Template :::
@@ -1273,14 +1273,14 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # ---------------- CONFIG ----------------
-DB_HOST = "project1-database.<rds_id>.ap-south-1.rds.amazonaws.com"
+DB_HOST = "pl-rdsdbendpoint.c36umkqcwd2g.ap-southeast-2.rds.amazonaws.com"
 DB_USER = "admin"
-DB_PASS = "valid_psswd"
-DB_NAME = "project1db"
+DB_PASS = "S19j10r18j10"
+DB_NAME = "pl-rdsdbendpoint"
 
-S3_BUCKET = "lject1"
-SQS_URL = "https://sqs.ap-south-1.amazonaws.comURL"
-REGION = "ap-south-1"
+S3_BUCKET = "lject1234"
+SQS_URL = "https://sqs.ap-southeast-2.amazonaws.com/564430721150/plsqs1"
+REGION = "ap-southeast-2"
 
 UPLOAD_FOLDER = "/tmp"
 # ---------------------------------------
